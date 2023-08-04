@@ -4,19 +4,19 @@ import { MainNavigation } from './MainNavigation'
 import { NavItem } from './MainNavigation/NavItem'
 import { UsedSpaceWidget } from './MainNavigation/UsedSpaceWidget'
 import { Profile } from '../Profile'
-import { InputControl, InputPrefix, InputRoot } from '../Input'
+import { Control, Prefix, Root } from '../Input'
 
 export function Sidebar() {
   return (
     <aside className="flex flex-col gap-6 border-r border-zinc-200 px-5 py-8">
       <Logo />
 
-      <InputRoot>
-        <InputPrefix>
+      <Root>
+        <Prefix>
           <Search className="h-5 w-5 text-zinc-500" />
-        </InputPrefix>
-        <InputControl placeholder="Search" />
-      </InputRoot>
+        </Prefix>
+        <Control placeholder="Search" />
+      </Root>
 
       <MainNavigation />
 
